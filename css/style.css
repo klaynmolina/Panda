@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Castoro Titling', cursive;
+    background-color: #171717;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gradient-font {
+    background-image: linear-gradient(to left, turquoise, steelblue, rebeccapurple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #171717;
+}
+
+.container {
+    width: auto;
+    margin: auto;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 20vh;
+}
+
+footer a:hover {
+    transform: scale(1.15);
+    transition: all .5s ease;
+}
+
+@media (max-width: 420px) {
+
+    .container {
+        padding: 5px;
+    }
+
+    .project-sections {
+        width: 95vw;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+    }
+}
